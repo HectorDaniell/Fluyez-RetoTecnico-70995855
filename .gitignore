@@ -1,0 +1,14 @@
+# Ignorar archivos del core de WordPress
+wp-admin/
+wp-includes/
+wp-config.php
+
+# Ignorar uploads y caché
+wp-content/uploads/
+wp-content/cache/
+
+# Ignorar plugins que se instalan desde el admin
+wp-content/plugins/
+
+# Ignorar Node.js y Tailwind
+node_modules/
