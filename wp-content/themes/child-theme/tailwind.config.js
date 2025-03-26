@@ -1,11 +1,18 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './**/*.php',
-    './assets/**/*.js'
+    "./*.php",
+    "./**/*.php",
+    "./wp-content/plugins/elementor/**/*.php",
+    "./wp-content/themes/tu-tema-hijo/**/*.php",
+    "./wp-content/themes/tu-tema-hijo/**/*.js",
+  ],
+  safelist: [
+    /^elementor-/,
+    /^e-/,
+    /^wp-/,
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
